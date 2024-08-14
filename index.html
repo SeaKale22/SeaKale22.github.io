@@ -7,28 +7,28 @@
     <title>WebAR: Kaleb K Card</title>
     <meta name="description" content="Hello, AR World! • A-Frame">
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-<!--    <script>-->
-<!--        AFRAME.registerComponent('follow-shadow', {-->
-<!--            schema: {type: 'selector'},-->
-<!--            init() {this.el.object3D.renderOrder = -1;},-->
-<!--            tick() {-->
-<!--                if (this.data) {-->
-<!--                    this.el.object3D.position.copy(this.data.object3D.position);-->
-<!--                    this.el.object3D.position.y-=0.001; // stop z-fighting-->
-<!--                }-->
-<!--            }-->
-<!--        });-->
-<!--    </script>-->
+    <script>
+        AFRAME.registerComponent('follow-shadow', {
+            schema: {type: 'selector'},
+            init() {this.el.object3D.renderOrder = -1;},
+            tick() {
+                if (this.data) {
+                    this.el.object3D.position.copy(this.data.object3D.position);
+                    this.el.object3D.position.y-=0.001; // stop z-fighting
+                }
+            }
+        });
+    </script>
 </head>
 <body>
 <a-scene reflection="directionalLight:a-light[type=directional]" webxr="optionalFeatures:hit-test;" ar-hit-test="target:#objects;" renderer="physicallyCorrectLights:true;colorManagement:true;exposure:1;toneMapping:ACESFilmic;" shadow="type:pcfsoft" xr-mode-ui="XRMode: xr">
-    <a-light type="directional" light="castShadow:true;" position="1 1 1" intensity="0.5" shadow-camera-automatic="#objects"></a-light>
+    <a-light type="directional" light="castShadow:false;" position="1 1 1" intensity="0.5" shadow-camera-automatic="#objects"></a-light>
     <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
     <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0 -1" shadow>
-        <a-box position="0 1.79541 0" rotation="" color="#FAF9F6" material="color: #ebe8dc" geometry="height: 1.69; depth: 1.61" scale="7.54422 2.63426 0.07221"></a-box>
+        <a-box position="0 1.79541 0" rotation="" color="#FAF9F6" material="blending: none; color: #f2eeee; displacementBias: 0; emissive: #f2eeee" geometry="depth: 1.61; height: 1.69" scale="7.54422 2.63426 0.07221"></a-box>
     </a-entity>
     <a-plane follow-shadow="#objects" material="shader:shadow" shadow="cast:false;" rotation="-90 0 0" width="2" height="2"></a-plane>
-    <a-sky color="#ECECEC" hide-on-enter-ar="" material="color: #68aefb"></a-sky>
+    <a-sky color="#68aefb" hide-on-enter-ar="" material="depthTest: false; depthWrite: false; dithering: false; color: #328cec; fog: false"></a-sky>
 </a-scene>
 </body>
 </html>
