@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="875c7f09-2450-4bfc-96e1-996692275dba" name="Changes" comment="" />
+    <list default="true" id="875c7f09-2450-4bfc-96e1-996692275dba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SeaKale22.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SeaKale22.github.io.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +34,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -50,7 +54,8 @@
       <option name="presentableId" value="Default" />
       <updated>1723055847268</updated>
       <workItem from="1723055857133" duration="490000" />
-      <workItem from="1723570470351" duration="3584000" />
+      <workItem from="1723570470351" duration="5236000" />
+      <workItem from="1723650708033" duration="1594000" />
     </task>
     <servers />
   </component>
