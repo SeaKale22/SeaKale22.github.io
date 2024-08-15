@@ -27,8 +27,11 @@
         <a-cursor color="black" fuse=false></a-cursor>
     </a-camera>
     <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0.89155 -1" shadow="" gltf-model="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Models/Card.gltf" modify-materials="" rotation="0 -90 0">
-        <a-cylinder position="-1 -1 0.4">
-            <a-image> src=""</a-image>
+        <a-cylinder id="github" position="-1 -1 0.4" open-url="url: https://github.com/SeaKale22">
+            <a-image src="https://github.com/SeaKale22/SeaKale22.github.io/blob/main/Logos/github-mark.png"></a-image>
+        </a-cylinder>
+        <a-cylinder id="linkedin" position="1 1 0.4" open-url="url: https://www.linkedin.com/in/kalebtk/">
+            <a-image src="https://github.com/SeaKale22/SeaKale22.github.io/blob/main/Logos/LI-In-Bug.png"></a-image>
         </a-cylinder>
     </a-entity>
     <a-plane follow-shadow="#objects" material="shader:shadow" shadow="cast:false;" rotation="-90 0 0" width="2" height="2"></a-plane>
