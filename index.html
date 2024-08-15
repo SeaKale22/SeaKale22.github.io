@@ -23,8 +23,13 @@
 <body>
 <a-scene reflection="directionalLight:a-light[type=directional]" webxr="optionalFeatures:hit-test;" ar-hit-test="target:#objects;" renderer="physicallyCorrectLights:true;colorManagement:true;exposure:1;toneMapping:ACESFilmic;" shadow="type:pcfsoft" xr-mode-ui="XRMode: xr">
     <a-light type="directional" light="castShadow:false;" position="1 1 1" intensity="0.5" shadow-camera-automatic="#objects"></a-light>
-    <a-camera position="0 0.4 0" wasd-controls="acceleration:10;"></a-camera>
+    <a-camera position="0 0.4 0" wasd-controls="acceleration:10;">
+        <a-cursor color="black" fuse=false></a-cursor>
+    </a-camera>
     <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0.89155 -1" shadow="" gltf-model="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Models/Card.gltf" modify-materials="" rotation="0 -90 0">
+        <a-cylinder position="-1 -1 0.4">
+            <a-image> src=""</a-image>
+        </a-cylinder>
     </a-entity>
     <a-plane follow-shadow="#objects" material="shader:shadow" shadow="cast:false;" rotation="-90 0 0" width="2" height="2"></a-plane>
     <a-sky color="#68aefb" hide-on-enter-ar="" material="depthTest: false; depthWrite: false; dithering: false; color: #328cec; fog: false"></a-sky>
