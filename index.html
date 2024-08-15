@@ -26,13 +26,13 @@
     <a-camera position="0 0.4 0" wasd-controls="acceleration:10;">
         <a-cursor color="black" fuse=false></a-cursor>
     </a-camera>
-    <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0.892 -1" shadow=""  modify-materials="" rotation="0 -90 0">
+    <a-entity id="objects" scale="0.2 0.2 0.2" position="0 0.892 -1" shadow="" modify-materials="" rotation="0 -90 0">
         <a-entity id="card" gltf-model="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Models/Card.gltf"></a-entity>
         <a-cylinder id="github" position="0.42116 0.4309 -2.20966" open-url="url:https://github.com/SeaKale22" material="" rotation="0 0 90" scale="0.72977 0.35543 0.72977">
-             <a-image src="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Logos/github-mark.png" position=""></a-image> 
+            <a-image src="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Logos/github-mark.png"  open-url="url:https://github.com/SeaKale22" position="0 -1.12354 0" rotation="78.35 45 -31.651334518616938"></a-image>
         </a-cylinder>
-        <a-cylinder id="linkedin" position="0.421 0.431 2.21" open-url="url:https://www.linkedin.com/in/kalebtk/" material="" rotation="0 0 90" scale="0.73 0.355 0.73">
-             <a-image src="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Logos/LI-In-Bug.png"></a-image> 
+        <a-cylinder id="linkedin" position="0.421 0.431 2.21" open-url="url:https://www.linkedin.com/in/kalebtk/" material="" rotation="0 5.117659026108513 89.37625942025224" scale="0.73 0.355 0.73">
+            <a-image src="https://raw.githubusercontent.com/SeaKale22/SeaKale22.github.io/main/Logos/LI-In-Bug.png" open-url="url:https://www.linkedin.com/in/kalebtk/" rotation="64.06871360932378 3.342635776793223 -86.05940674423991" position="0 -0.72851 0"></a-image>
         </a-cylinder>
     </a-entity>
     <a-plane follow-shadow="#objects" material="shader:shadow" shadow="cast:false;" rotation="-90 0 0" width="2" height="2"></a-plane>
